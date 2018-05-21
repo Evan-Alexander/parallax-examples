@@ -1,0 +1,94 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: #ccc;
+  font-weight: lighter;
+}
+
+figure {
+  margin: auto;
+}
+
+.content {
+  padding: 100px 0;
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Parallax */
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url(images/bird-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url(images/black-bird-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+/* bird standing on the post */
+.fore-bird {
+  /* actual height of the image is 733 and make twice the width */
+  width: 960px;
+  height: 733px;
+  background-image: url(images/fore-bird.png);
+  /* pushes the image all the way to the right of the div */
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: absolute;
+  /* pushed the entire image div to the right of the screen */
+  left: 50%;
+  /* position the bird just to the right of the logo */
+  margin-left: -380px;
+  /* push the bird close to the bottom of the header */
+  top: 300px;
+}
+
+/* fuzzy bird in the background */
+.back-bird {
+  /* actual height of the image is 298 and make twice the width */
+  width: 960px;
+  height: 298px;
+  background-image: url(images/back-bird.png);
+  /* pushes the image all the way to the left of the div */
+  background-position: top left;
+  background-repeat: no-repeat;
+  position: absolute;
+  /* pushed the entire image div to the right of the screen */
+  left: 50%;
+  /* position the bird just to the right of the logo */
+  margin-left: -480px;
+  /* push the bird close to the bottom of the header */
+}
+
+/* Models Grid */
+figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.is-showing {
+  opacity: 1;
+  transform: translateY(0px);
+}
