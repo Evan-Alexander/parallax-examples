@@ -134,6 +134,7 @@ figcaption {
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: 100px;
+  margin-bottom: 100px;
   border-radius: 50%;
   position: relative;
 }
@@ -142,7 +143,7 @@ figcaption {
 
 /* Filler div to make sure Periscope can get to the top of the page */
 .filler {
-  height: 1000px;
+  height: 500px;
 }
 
 .window-tint {
@@ -190,4 +191,38 @@ figcaption {
   text-decoration: none;
   background-color: white;
   color: black;
+}
+/* Posts */
+.blog-posts {
+  margin-top: 100px;
+}
+
+.post {
+  border: 1px solid #e1e1e1;
+  padding: 30px 20px 30px 20px;
+  background: white;
+  position: relative;
+}
+
+.post-1 {
+  transform: translate(100px, 20px);
+}
+
+.post-2 {
+  z-index: 2;
+}
+
+.post-3 {
+  transform: translate(-100px, 20px);
+}
+.btn {
+  color: black;
+  padding: 5px 30px;
+  border: .5px solid black;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
 }
