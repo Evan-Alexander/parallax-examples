@@ -51,10 +51,10 @@ $(window).scroll(function() {
 
   if(windowScroll > $('.blog-posts').offset().top - windowHeight) {
     // This moves the blog posts according to scroll
-    var offset = Math.min(0, windowScroll - $('.blog-posts').offset().top + windowHeight - 450);
+    var offset = Math.min(0, windowScroll - $('.blog-posts').offset().top + windowHeight - 600);
 
-    $('.post-1').css({ 'transform' : 'translate(' + offset + 'px, '+ Math.abs(offset * 0.2) + 'px)'});
-
-    $('.post-3').css({ 'transform' : 'translate(' + Math.abs(offset) + 'px, '+ Math.abs(offset * 0.2) + 'px)'});
+    $('.post-1').css({ 'transform' : 'translate(' + offset + 'px, '+ Math.abs(offset * 0.1) + 'px)'});
+    
+    $('.post-3').css({ 'transform' : 'translate(' + Math.abs(offset) + 'px, '+ Math.abs(offset * 0.1) + 'px)'});
   }
 });
