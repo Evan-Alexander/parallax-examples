@@ -206,7 +206,8 @@ figcaption {
   padding: 30px 20px 30px 20px;
   background: white;
   position: relative;
-  /* margin: 0 1px; */
+  max-width: 31%;
+  margin: 0 5px;
 }
 
 .post-1 {
